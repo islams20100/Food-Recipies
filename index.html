@@ -1,0 +1,124 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/index_style.css">
+</head>
+
+<body>
+
+
+
+
+  <header class="vh-100 d-flex flex-wrap align-items-start justify-content-center position-relative">
+    <nav class="navbar navbar-expand-lg w-100  navbar-dark bg-opacity">
+      <a class="navbar-brand" href="#">
+
+        <img src="images/logo.png" class="logo" alt="spice resturant logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Recipes
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" onclick="getRecipe('pizza')" href="#">Pizza</a>
+              <a class="dropdown-item" onclick="getRecipe('pasta')" href="#">Pasta</a>
+              <a class="dropdown-item" onclick="getRecipe('salad')" href="#">Salad</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacts</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </nav>
+    <h1 class="w-100 text-white font-weight-bolder text-center">Never Miss a Recipe!</h1>
+
+    <div class="searchInput position-absolute w-75 m-auto p-5 shadow-lg rounded bg-white">
+
+
+      <div class="row no-gutters">
+        <div class="col-md-10">
+          <input id="searchInput" placeholder="Enter pizza , pasta or salad" class=" rounded-0 form-control" type="text"
+            name="" id="">
+
+          <div id="alertMessage" class="alert alert-danger mt-2 d-none">Enter pizza , pasta or salad</div>
+
+        </div>
+        <div class="col-md-2">
+          <button id="searchBtn" class="btn btn-block text-black btn-mine font-weight-bolder">search</button>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <section id="recipesSearch" class="text-center py-5">
+
+    <div class="container-fluid py-5">
+
+      <h2>Recipe Categories</h2>
+      <p class="lead">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit,<br> sed tincidunt ut laoreet
+        dolore magna aliquam erat volutpat lorem
+      </p>
+
+
+
+
+      <div class="container w-75">
+        <div id="recipes" class="row">
+
+        </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Ingrendients</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body" id="myRecipe">
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+
+    </div>
+  </section>
+
+
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/first.js"></script>
+</body>
+
+</html>
